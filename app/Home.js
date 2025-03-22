@@ -31,6 +31,10 @@ import {
 
 import { projects, skills, experience, education } from './data';
 
+import ProfilePic from './assets/akhand.jpg'
+import Image from "next/image";
+
+
 export const Home = () => (
     <main className="px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -43,7 +47,7 @@ export const Home = () => (
                         </SectionTitle>
                         <p className="text-gray-300 text-lg mb-6">
                             Hello! I&apos;m Akhand Pratap Singh, a passionate full-stack developer based in Lucknow, India.
-                            With over 4 years of experience, I specialize in creating robust and scalable web
+                            With over 3+ years of experience, I specialize in creating robust and scalable web
                             applications. My expertise spans across PHP, Laravel, React, and more. I am
                             dedicated to delivering high-quality solutions and continuously improving my
                             skills.
@@ -54,13 +58,10 @@ export const Home = () => (
                         </p>
                     </div>
                     <div className="flex justify-center">
-                        <motion.img
-                            src="https://apsinghdev.in/wp-content/uploads/bb-plugin/cache/fotor_2023-4-13_4_23_43-300x300-removebg-preview-square.png"
+                        <img
+                            src={ProfilePic.src} 
                             alt="Akhand Pratap Singh"
-                            className="rounded-full w-64 h-64 border-4 border-purple-500/30 shadow-lg"
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.8 }}
+                            className="rounded-full w-100 h-100 border-4 border-purple-500/30 shadow-lg"
                         />
                     </div>
                 </div>
