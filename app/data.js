@@ -1,3 +1,5 @@
+import { Linkedin } from "react-feather";
+
 export const projects = [
     {
         title: 'Cyber Secirity (LMS)',
@@ -119,4 +121,6 @@ export const education = [
 export const metaData = {
     title: 'Akhand Pratap Singh',
     description: 'Full Stack Developer',
+    github: 'https://github.com/Akhand2021',
+    Linkedin:'https://www.linkedin.com/in/akhand-pratap-singh-b64812120/'
 }
