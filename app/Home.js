@@ -61,7 +61,7 @@ export const Home = () => (
                         <img
                             src={ProfilePic.src} 
                             alt="Akhand Pratap Singh"
-                            className="rounded-full w-100 h-100 border-4 border-purple-500/30 shadow-lg"
+                            className="rounded-full w-60 h-60 sm:w-60 sm:h-60 md:w-80 md:h-80 border-4 border-purple-500/30 shadow-lg"
                         />
                     </div>
                 </div>
@@ -178,7 +178,7 @@ export const Home = () => (
                                 ></textarea>
                             </div>
                             <Button
-                                type="submit"
+                                type="button"
                                 className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-md hover:from-purple-600 hover:to-pink-600 transition-colors"
                             >
                                 Send Message
