@@ -2,7 +2,7 @@ import { Linkedin } from "react-feather";
 
 export const projects = [
     {
-        title: 'Cyber Secirity (LMS)',
+        title: 'Cyber Security (LMS)',
         description: 'LMS for cyber security training.',
         technologies: ['React', 'Laravel', 'MySQL'],
         link: 'https://portal.selecttechinc.com/',
