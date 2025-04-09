@@ -5,7 +5,7 @@ export const projects = [
         title: 'Cyber Secirity (LMS)',
         description: 'LMS for cyber security training.',
         technologies: ['React', 'Laravel', 'MySQL'],
-        link: '#',
+        link: 'https://portal.selecttechinc.com/',
     },
     {
         title: 'Talon Lodge Online Booking System',
@@ -23,13 +23,13 @@ export const projects = [
         title: 'Comprehensive Family Case Management System',
         description: 'Case management system for family services.',
         technologies: ['React', 'Node.js', 'MySQL', 'Azure'],
-        link: 'https://simon3.cfs-nyc.com',
+        link: 'https://simone3.cfs-nyc.com/',
     },
     {
         title: 'Florida Real Estate School LMS',
-        description: 'LMS and online bookstore for a real estate school.',
+        description: 'Learning management system and online bookstore for a real estate school.',
         technologies: ['Opencart'],
-        link: '#',
+        link: 'https://floridarealestateschool.com/',
     },
     {
         title: 'Email Marketing Service',
@@ -38,17 +38,17 @@ export const projects = [
         link: 'https://www.emailcontact.com/',
     },
     {
-        title: 'School Management System',
-        description: 'System to manage school',
-        technologies: ['Laaravel', 'MySQL', 'JavaScript'],
-        link: 'http://schoolclub.apsinghdev.in/',
+        title: 'Designer Club',
+        description: 'Website for rent and buy designer dresses bags and accessories for australia',
+        technologies: ['Shopify', 'Liquid', 'JavaScript', 'Laravel'],
+        link: 'https://thedesignerclub.com.au/',
     },
     {
-        title: 'Designer Club',
-        description: 'Shopify Store',
-        technologies: ['Shopify', 'Liquid', 'JavaScript', 'Laravel'],
-        link: 'https://2c2d66-e4.myshopify.com/',
-    },
+        title:'Smart Help Store',
+        description:'Online store for devices complete solutions apple products and traning',
+        technologies:['PHP', 'JavaScript', 'FileMaker'],
+        link:'https://smarthelp.store/'
+    }
 ];
 
 export const skills = [
@@ -58,8 +58,8 @@ export const skills = [
     { skill: 'Node.js', level: 80 },
     { skill: 'React', level: 80 },
     { skill: 'MySQL', level: 80 },
-    { skill: 'AWS', level: 70 },
-    { skill: 'Git', level: 85 },
+    { skill: 'AWS', level: 55 },
+    { skill: 'Git', level: 80 },
 ];
 
 export const experience = [

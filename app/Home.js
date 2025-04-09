@@ -58,11 +58,13 @@ export const Home = () => (
                         </p>
                     </div>
                     <div className="flex justify-center">
-                        <img
-                            src={ProfilePic.src} 
-                            alt="Akhand Pratap Singh"
-                            className="rounded-full w-60 h-60 sm:w-60 sm:h-60 md:w-80 md:h-80 border-4 border-purple-500/30 shadow-lg"
-                        />
+                        <div className="animate-float">
+                            <img
+                                src={ProfilePic.src} 
+                                alt="Akhand Pratap Singh"
+                                className="rounded-full w-60 h-60 sm:w-60 sm:h-60 md:w-80 md:h-80 border-4 border-purple-500/30 shadow-lg hover:scale-105 transition-transform duration-300"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
