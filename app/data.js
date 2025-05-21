@@ -86,7 +86,7 @@ export const experience = [
     },
     {
         title: 'Software Developer',
-        company: 'Edoro Technology LLP',
+        company: 'Edoro Technologies LLP',
         dates: 'January 2022 - April 2022',
         description: [
             'Developed and maintained software applications using PHP, jQuery, JavaScript, Ajax, and MySQL.',
