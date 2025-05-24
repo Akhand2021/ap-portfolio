@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Briefcase, BookOpen, Zap, ChevronRight } from 'react-feather';
-
+import Image from "next/image";
 export const GradientText = ({ children, className }) => (
     <span className={`bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 ${className}`}>
         {children}
@@ -71,11 +71,11 @@ export const ProjectCard = ({ project }) => (
     <Card className="mb-8 p-6 hover:shadow-lg transition-shadow duration-300">
         {project.imageUrl && (
             <div className="relative overflow-hidden mb-4 rounded-md">
-                <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    className="w-full h-auto transition-transform duration-500 hover:scale-105 rounded-md"
-                />
+                <Image src={project.imageUrl}
+                    alt="project.title"
+                    width={400}
+                    height={300}
+                    className="object-cover" />
             </div>
         )}
         <CardHeader>
@@ -84,7 +84,7 @@ export const ProjectCard = ({ project }) => (
         </CardHeader>
         <CardContent>
             <div className="mb-4">
-                <span className="text-sm font-medium text-gray-300 flex items-center gap-1"><Zap className="w-4 h-4"/>Technologies Used:</span>
+                <span className="text-sm font-medium text-gray-300 flex items-center gap-1"><Zap className="w-4 h-4" />Technologies Used:</span>
                 <div className="flex flex-wrap gap-2 mt-2">
                     {project.technologies.map((tech, index) => (
                         <Badge key={index} variant="secondary">

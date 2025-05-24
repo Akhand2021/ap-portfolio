@@ -1,4 +1,11 @@
 import { Linkedin } from "react-feather";
+import florida from './assets/projects/florida.png';
+import Select from './assets/projects/select-tech.png';
+import Talon from './assets/projects/talon-lodge.png';
+import Driving from './assets/projects/driving-school.png';
+import Simon from './assets/projects/simon.png';
+import DC from './assets/projects/dc.png';
+import Smart from './assets/projects/smart.png';
 
 export const projects = [
     {
@@ -6,42 +13,49 @@ export const projects = [
         description: 'LMS for cyber security training.',
         technologies: ['React', 'Laravel', 'MySQL'],
         link: 'https://portal.selecttechinc.com/',
+        imageUrl: Select,
     },
     {
         title: 'Talon Lodge Online Booking System',
         description: 'Online booking system for a lodge and spa.',
         technologies: ['PHP', 'Smarty'],
         link: 'http://www.talonlodge.com/',
+        imageUrl: Talon,
     },
     {
         title: '1 STOP Driver Improvement Clinic',
         description: 'Online learning platform for driver improvement.',
         technologies: ['Laravel', 'MySQL', 'JavaScript'],
         link: 'https://1stopdrivingschools.com/',
+        imageUrl: Driving,
     },
     {
         title: 'Comprehensive Family Case Management System',
         description: 'Case management system for family services.',
         technologies: ['React', 'Node.js', 'MySQL', 'Azure'],
         link: 'https://simone3.cfs-nyc.com/',
+        imageUrl: Simon,
     },
     {
         title: 'Florida Real Estate School LMS',
         description: 'Learning management system and online bookstore for a real estate school.',
         technologies: ['Opencart'],
         link: 'https://floridarealestateschool.com/',
+        imageUrl: florida,
     },
     {
         title: 'Designer Club',
         description: 'Website for rent and buy designer dresses bags and accessories for australia',
         technologies: ['Shopify', 'Liquid', 'JavaScript', 'Laravel'],
         link: 'https://thedesignerclub.com.au/',
+        imageUrl: DC,
     },
     {
-        title:'Smart Help Store',
-        description:'Online store for devices complete solutions apple products and traning',
-        technologies:['PHP', 'JavaScript', 'FileMaker'],
-        link:'https://smarthelp.store/'
+        title: 'Smart Help Store',
+        description: 'Online store for devices complete solutions apple products and traning',
+        technologies: ['PHP', 'JavaScript', 'FileMaker'],
+        link: 'https://smarthelp.store/',
+        imageUrl: Smart,
     }
 ];
 
@@ -119,5 +133,5 @@ export const metaData = {
     location: 'Lucknow, India',
     description: 'Full Stack Developer',
     github: 'https://github.com/Akhand2021',
-    linkedin:'https://www.linkedin.com/in/akhand-pratap-singh-b64812120/'
+    linkedin: 'https://www.linkedin.com/in/akhand-pratap-singh-b64812120/'
 }
