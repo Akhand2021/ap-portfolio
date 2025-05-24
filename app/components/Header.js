@@ -43,7 +43,6 @@ export default function Header() {
             <div className="max-w-7xl  mx-auto flex justify-between items-center">
                 <div className="flex items-center gap-4">
                     <GradientText className="text-2xl sm:text-3xl font-bold">
-                        {/* <Link href="/">{metaData.title}</Link> */}
                         <div className="h-12 overflow-hidden flex items-center">
                             <Image
                                 src={Logo}
@@ -146,10 +145,16 @@ export default function Header() {
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-10" />
                 <DialogPanel className="fixed inset-y-0 right-0 z-10  overflow-y-auto bg-gradient-to-br from-gray-900 via-purple-900 to-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow-2xl">
-                    <div className="flex items-center justify-between">
-                        <a href="#" className="-m-1.5 p-1.5">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 text-2xl sm:text-3xl font-bold">{metaData.title}</span>
-                        </a>
+                    <div className="flex items-center ">
+                        <div className="h-12 overflow-hidden flex items-center">
+                            <Image
+                                src={Logo}
+                                alt="logo"
+                                width={280}
+                                height={200}
+                                className="object-cover"
+                            />
+                        </div>
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(false)}
@@ -205,7 +210,7 @@ export default function Header() {
                                     Contact
                                 </a>
                             </div>
-                            <div className="py-6">
+                            {/* <div className="py-6">
                                 <Link
                                     href="/blog"
                                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-pink-600 shadow hover:shadow-xl transition-all duration-200"
@@ -213,7 +218,7 @@ export default function Header() {
                                 >
                                     Blog
                                 </Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </DialogPanel>
