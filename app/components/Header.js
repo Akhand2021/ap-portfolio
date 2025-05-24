@@ -39,7 +39,7 @@ export default function Header() {
 
     return (
         <header className="sticky top-0 z-10  py-6 md:py-8 px-4 sm:px-6 lg:px-8 shadow-lg bg-gradient-to-br from-gray-900 via-purple-900 to-black rounded-b-xl" >
-            <div className="max-w-7xl mx-auto flex justify-between items-center">
+            <div className="max-w-7xl  mx-auto flex justify-between items-center">
                 <div className="flex items-center gap-4">
                     <GradientText className="text-2xl sm:text-3xl font-bold">
                         <Link href="/">{metaData.title}</Link>
@@ -103,7 +103,7 @@ export default function Header() {
                 </nav>
                 <div className="flex gap-4">
                     <a
-                        href={metaData.Linkedin}
+                        href={metaData.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-blue-400 transition-colors rounded-md shadow hover:shadow-xl hover:bg-pink-600 p-1"

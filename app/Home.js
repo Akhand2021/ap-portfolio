@@ -48,7 +48,7 @@ export const Home = () => (
                         <p className="text-gray-300 text-lg mb-6">
                             Hello! I&apos;m Akhand Pratap Singh, a passionate full-stack developer based in Lucknow, India.
                             With over 3+ years of experience, I specialize in creating robust and scalable web
-                            applications. My expertise spans across PHP, Laravel, React, and more. I am
+                            applications. My expertise spans across PHP, Laravel, NodeJS, React, and more. I am
                             dedicated to delivering high-quality solutions and continuously improving my
                             skills.
                         </p>
@@ -60,7 +60,7 @@ export const Home = () => (
                     <div className="flex justify-center">
                         <div className="animate-float">
                             <img
-                                src={ProfilePic.src} 
+                                src={ProfilePic.src}
                                 alt="Akhand Pratap Singh"
                                 className="rounded-full w-60 h-60 sm:w-60 sm:h-60 md:w-80 md:h-80 border-4 border-purple-500/30 shadow-lg hover:scale-105 transition-transform duration-300"
                             />
@@ -150,26 +150,28 @@ export const Home = () => (
                             </div>
                         </div>
                     </div>
-                    <div className="md:col-span-2 flex justify-center items-center space-x-4">
-                        <Button asChild>
-                            <a href={metaData.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <div className="col-span-1 md:col-span-2 flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-3 sm:space-y-0">
+                        <Button asChild className="w-full sm:w-auto">
+                            <a href={metaData.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                 GitHub
                                 <Github className="w-5 h-5" />
                             </a>
                         </Button>
-                        <Button asChild>
-                            <a href={metaData.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                        <Button asChild className="w-full sm:w-auto">
+                            <a href={metaData.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                 LinkedIn
                                 <Linkedin className="w-5 h-5" />
                             </a>
                         </Button>
-                        <Button asChild>
-                            <a href={`mailto:${metaData.email}`} className="flex items-center gap-2">
+                        <Button asChild className="w-full sm:w-auto">
+                            <a href={`mailto:${metaData.email}`} className="flex items-center justify-center gap-2">
                                 Email
                                 <Mail className="w-5 h-5" />
                             </a>
                         </Button>
                     </div>
+
+
                 </div>
             </section>
         </div>

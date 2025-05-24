@@ -32,12 +32,6 @@ export const projects = [
         link: 'https://floridarealestateschool.com/',
     },
     {
-        title: 'Email Marketing Service',
-        description: 'Platform for creating, scheduling, and sending email campaigns.',
-        technologies: ['PHP', 'MySQL', 'Laravel', 'Java', 'Angular'],
-        link: 'https://www.emailcontact.com/',
-    },
-    {
         title: 'Designer Club',
         description: 'Website for rent and buy designer dresses bags and accessories for australia',
         technologies: ['Shopify', 'Liquid', 'JavaScript', 'Laravel'],
