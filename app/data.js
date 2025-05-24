@@ -120,7 +120,10 @@ export const education = [
 
 export const metaData = {
     title: 'Akhand Pratap Singh',
+    email: 'contact@apsinghdev.in',
+    phone: '+91 9453915397',
+    location: 'Lucknow, India',
     description: 'Full Stack Developer',
     github: 'https://github.com/Akhand2021',
-    Linkedin:'https://www.linkedin.com/in/akhand-pratap-singh-b64812120/'
+    linkedin:'https://www.linkedin.com/in/akhand-pratap-singh-b64812120/'
 }

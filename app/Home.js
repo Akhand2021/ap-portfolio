@@ -29,7 +29,7 @@ import {
     cn
 } from './components/HelperComponents';
 
-import { projects, skills, experience, education } from './data';
+import { projects, skills, experience, education, metaData } from './data';
 
 import ProfilePic from './assets/akhand.jpg'
 import Image from "next/image";
@@ -126,7 +126,7 @@ export const Home = () => (
                 <SectionTitle>
                     Contact <GradientText>Me</GradientText>
                 </SectionTitle>
-                <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="grid md:grid-cols-3 gap-8 items-center">
                     <div>
                         <p className="text-gray-300 text-lg mb-4">
                             Feel free to reach out to me for any questions or opportunities.
@@ -135,57 +135,40 @@ export const Home = () => (
                             <div className="flex items-center gap-2 text-gray-400">
                                 <Mail className="w-5 h-5" />
                                 <span className="text-gray-300">
-                                    <a href="mailto:contact@apsinghdev.in" className="hover:text-white transition-colors">
-                                        contact@apsinghdev.in
+                                    <a href={`mailto:${metaData.email}`} className="hover:text-white transition-colors">
+                                        {metaData.email}
                                     </a>
                                 </span>
                             </div>
                             <div className="flex items-center gap-2 text-gray-400">
                                 <Phone className="w-5 h-5" />
-                                <span className="text-gray-300">+91 9453915397</span>
+                                <span className="text-gray-300">{metaData.phone}</span>
                             </div>
                             <div className="flex items-center gap-2 text-gray-400">
                                 <MapPin className="w-5 h-5" />
-                                <span className="text-gray-300">Lucknow, India</span>
+                                <span className="text-gray-300">{metaData.location}</span>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <form className="space-y-4">
-                            <div className="space-y-2">
-                                <label htmlFor="name" className="text-gray-300 block">Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    placeholder="Your Name"
-                                    className="w-full px-4 py-2 bg-white/5 border border-white/10 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500/50"
-                                />
-                            </div>
-                            <div className="space-y-2">
-                                <label htmlFor="email" className="text-gray-300 block">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    placeholder="Your Email"
-                                    className="w-full px-4 py-2 bg-white/5 border border-white/10 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500/50"
-                                />
-                            </div>
-                            <div className="space-y-2">
-                                <label htmlFor="message" className="text-gray-300 block">Message</label>
-                                <textarea
-                                    id="message"
-                                    placeholder="Your Message"
-                                    rows={4}
-                                    className="w-full px-4 py-2 bg-white/5 border border-white/10 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500/50 resize-none"
-                                ></textarea>
-                            </div>
-                            <Button
-                                type="button"
-                                className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-md hover:from-purple-600 hover:to-pink-600 transition-colors"
-                            >
-                                Send Message
-                            </Button>
-                        </form>
+                    <div className="md:col-span-2 flex justify-center items-center space-x-4">
+                        <Button asChild>
+                            <a href={metaData.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                GitHub
+                                <Github className="w-5 h-5" />
+                            </a>
+                        </Button>
+                        <Button asChild>
+                            <a href={metaData.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                LinkedIn
+                                <Linkedin className="w-5 h-5" />
+                            </a>
+                        </Button>
+                        <Button asChild>
+                            <a href={`mailto:${metaData.email}`} className="flex items-center gap-2">
+                                Email
+                                <Mail className="w-5 h-5" />
+                            </a>
+                        </Button>
                     </div>
                 </div>
             </section>

@@ -15,6 +15,7 @@ export const SectionTitle = ({ children, className }) => (
     </h2>
 );
 
+// This component is used to animate the card on scroll
 export const AnimatedCard = ({ children, delay = 0 }) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -24,7 +25,7 @@ export const AnimatedCard = ({ children, delay = 0 }) => (
         {children}
     </motion.div>
 );
-
+//  This component is used to animate the card on scroll
 export const SkillBar = ({ skill, level }) => (
     <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
@@ -161,3 +162,4 @@ export const Progress = ({ value, className, ...props }) => {
 };
 
 export const cn = (...classes) => classes.filter(Boolean).join(' ');
+
