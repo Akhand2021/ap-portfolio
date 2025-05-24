@@ -151,19 +151,19 @@ export const Home = () => (
                         </div>
                     </div>
                     <div className="col-span-1 md:col-span-2 flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-3 sm:space-y-0">
-                        <Button asChild className="w-full sm:w-auto">
+                        <Button className="w-full sm:w-auto">
                             <a href={metaData.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                 GitHub
                                 <Github className="w-5 h-5" />
                             </a>
                         </Button>
-                        <Button asChild className="w-full sm:w-auto">
+                        <Button className="w-full sm:w-auto">
                             <a href={metaData.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                 LinkedIn
                                 <Linkedin className="w-5 h-5" />
                             </a>
                         </Button>
-                        <Button asChild className="w-full sm:w-auto">
+                        <Button className="w-full sm:w-auto">
                             <a href={`mailto:${metaData.email}`} className="flex items-center justify-center gap-2">
                                 Email
                                 <Mail className="w-5 h-5" />

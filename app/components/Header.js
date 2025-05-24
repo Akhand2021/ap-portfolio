@@ -31,7 +31,8 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { metaData } from '../data';
 import Link from 'next/link';
-
+import Logo from '../assets/logos.png'
+import Image from "next/image";
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -42,7 +43,17 @@ export default function Header() {
             <div className="max-w-7xl  mx-auto flex justify-between items-center">
                 <div className="flex items-center gap-4">
                     <GradientText className="text-2xl sm:text-3xl font-bold">
-                        <Link href="/">{metaData.title}</Link>
+                        {/* <Link href="/">{metaData.title}</Link> */}
+                        <div className="h-12 overflow-hidden flex items-center">
+                            <Image
+                                src={Logo}
+                                alt="logo"
+                                width={280}
+                                height={200}
+                                className="object-cover"
+                            />
+                        </div>
+
                     </GradientText>
                     <span className="text-gray-400 hidden font-bold sm:inline">| {metaData.description}</span>
                 </div>
