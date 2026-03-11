@@ -16,8 +16,9 @@ export const SectionTitle = ({ children, className }) => (
 );
 
 // This component is used to animate the card on scroll
-export const AnimatedCard = ({ children, delay = 0 }) => (
+export const AnimatedCard = ({ children, delay = 0, className = '' }) => (
     <motion.div
+        className={className}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay }}
@@ -68,22 +69,24 @@ export const EducationCard = ({ education }) => (
 );
 
 export const ProjectCard = ({ project }) => (
-    <Card className="mb-8 p-6 hover:shadow-lg transition-shadow duration-300">
+    <Card className="flex h-full min-h-[34rem] flex-col p-6 hover:shadow-lg transition-shadow duration-300">
         {project.imageUrl && (
-            <div className="relative overflow-hidden mb-4 rounded-md">
-                <Image src={project.imageUrl}
-                    alt="project.title"
+            <div className="mb-4 overflow-hidden rounded-md">
+                <Image
+                    src={project.imageUrl}
+                    alt={project.title}
                     width={400}
                     height={300}
-                    className="object-cover" />
+                    className="h-60 w-full object-cover"
+                />
             </div>
         )}
-        <CardHeader>
-            <CardTitle>{project.title}</CardTitle>
-            <CardDescription>{project.description}</CardDescription>
+        <CardHeader className="min-h-[7.5rem]">
+            <CardTitle className="line-clamp-2 min-h-[3.5rem]">{project.title}</CardTitle>
+            <CardDescription className="line-clamp-3 min-h-[4.5rem]">{project.description}</CardDescription>
         </CardHeader>
-        <CardContent>
-            <div className="mb-4">
+        <CardContent className="flex flex-1 flex-col">
+            <div className="mb-4 min-h-[5.5rem]">
                 <span className="text-sm font-medium text-gray-300 flex items-center gap-1"><Zap className="w-4 h-4" />Technologies Used:</span>
                 <div className="flex flex-wrap gap-2 mt-2">
                     {project.technologies.map((tech, index) => (
@@ -97,7 +100,7 @@ export const ProjectCard = ({ project }) => (
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
+                className="mt-auto text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
             >
                 View Project <ChevronRight className="w-4 h-4" />
             </a>
