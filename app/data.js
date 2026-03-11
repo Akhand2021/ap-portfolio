@@ -6,6 +6,8 @@ import Driving from './assets/projects/driving-school.png';
 import Simon from './assets/projects/simon.png';
 import DC from './assets/projects/dc.png';
 import Smart from './assets/projects/smart.png';
+import BorrowedLuxeHire from './assets/projects/borrowed_luxe_hire.png';
+import Mandaean from './assets/projects/mandean.png';
 
 export const projects = [
     {
@@ -49,6 +51,20 @@ export const projects = [
         technologies: ['Shopify', 'Liquid', 'JavaScript', 'Laravel'],
         link: 'https://thedesignerclub.com.au/',
         imageUrl: DC,
+    },
+    {
+        title: 'Borrowed Luxe Hire',
+        description: 'Luxury fashion rental platform for curated designer looks and occasion wear.',
+        technologies: ['Shopify', 'Laravel', 'PHP', 'Liquid'],
+        link: 'https://www.borrowedluxehire.com.au/',
+        imageUrl: BorrowedLuxeHire,
+    },
+    {
+        title: 'Mandaean App',
+        description: 'Developed the API and admin panel for a platform focused on preserving and sharing Mandaean faith, culture, and heritage.',
+        technologies: ['Laravel', 'PHP', 'REST API', 'OpenAPI'],
+        link: 'https://admin.mandaeanapp.com.au/',
+        imageUrl: Mandaean,
     },
     {
         title: 'Smart Help Store',

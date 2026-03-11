@@ -34,10 +34,14 @@ import { projects, skills, experience, education, metaData } from './data';
 import ProfilePic from './assets/akhand.jpg'
 import Image from "next/image";
 
+const EXPERIENCE_START_YEAR = 2022;
 
-export const Home = () => (
-    <main className="px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+export const Home = () => {
+    const yearsOfExperience = Math.max(1, new Date().getFullYear() - EXPERIENCE_START_YEAR);
+
+    return (
+        <main className="px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
             {/* About Section */}
             <section id="about" className="py-16">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -47,7 +51,7 @@ export const Home = () => (
                         </SectionTitle>
                         <p className="text-gray-300 text-lg mb-6">
                             Hello! I&apos;m Akhand Pratap Singh, a passionate full-stack developer based in Lucknow, India.
-                            With over 3+ years of experience, I specialize in creating robust and scalable web
+                            With over {yearsOfExperience}+ years of experience, I specialize in creating robust and scalable web
                             applications. My expertise spans across PHP, Laravel, NodeJS, React, and more. I am
                             dedicated to delivering high-quality solutions and continuously improving my
                             skills.
@@ -114,7 +118,7 @@ export const Home = () => (
                 </SectionTitle>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project, index) => (
-                        <AnimatedCard key={index} delay={index * 0.15}>
+                        <AnimatedCard key={index} delay={index * 0.15} className="h-full">
                             <ProjectCard project={project} />
                         </AnimatedCard>
                     ))}
@@ -170,10 +174,9 @@ export const Home = () => (
                             </a>
                         </Button>
                     </div>
-
-
                 </div>
             </section>
         </div>
     </main>
-);
+    );
+};
