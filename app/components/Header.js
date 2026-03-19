@@ -9,28 +9,14 @@ import {
     Github,
 } from 'lucide-react';
 import {
-    ArrowPathIcon,
     Bars3Icon,
-    ChartPieIcon,
-    CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 import {
     Dialog,
     DialogPanel,
-    Disclosure,
-    DisclosureButton,
-    DisclosurePanel,
-    Popover,
-    PopoverButton,
-    PopoverGroup,
-    PopoverPanel,
 } from '@headlessui/react'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { metaData } from '../data';
-import Link from 'next/link';
 import Logo from '../assets/logos.png'
 import Image from "next/image";
 export default function Header() {
@@ -63,31 +49,15 @@ export default function Header() {
                                 href="#about"
                                 className="text-gray-300 hover:text-white font-bold transition-colors block px-2 py-1"
                             >
-                                About
+                                Home
                             </a>
                         </li>
                         <li className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-1 hover:border shadow-md shadow-amber-50 hover:shadow-lg hover:bg-pink-600">
                             <a
-                                href="#skills"
+                                href="#services"
                                 className="text-gray-300 hover:text-white font-bold transition-colors block px-2 py-1"
                             >
-                                Skills
-                            </a>
-                        </li>
-                        <li className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-1 hover:border shadow-md shadow-amber-50 hover:shadow-lg hover:bg-pink-600">
-                            <a
-                                href="#experience"
-                                className="text-gray-300 hover:text-white font-bold transition-colors block px-2 py-1"
-                            >
-                                Experience
-                            </a>
-                        </li>
-                        <li className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-1 hover:border shadow-md shadow-amber-50 hover:shadow-lg hover:bg-pink-600">
-                            <a
-                                href="#education"
-                                className="text-gray-300 hover:text-white font-bold transition-colors block px-2 py-1"
-                            >
-                                Education
+                                Services
                             </a>
                         </li>
                         <li className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-1 hover:border shadow-md shadow-amber-50 hover:shadow-lg hover:bg-pink-600">
@@ -97,6 +67,12 @@ export default function Header() {
                             >
                                 Projects
                             </a>
+                        </li>
+                        <li className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-1 hover:border shadow-md shadow-amber-50 hover:shadow-lg hover:bg-pink-600">
+                            <a href="#why-choose-me" className="text-gray-300 hover:text-white font-bold transition-colors block px-2 py-1">Why Me</a>
+                        </li>
+                        <li className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-1 hover:border shadow-md shadow-amber-50 hover:shadow-lg hover:bg-pink-600">
+                            <a href="#process" className="text-gray-300 hover:text-white font-bold transition-colors block px-2 py-1">Process</a>
                         </li>
                         <li className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-1 hover:border shadow-md shadow-amber-50 hover:shadow-lg hover:bg-pink-600">
                             <a
@@ -172,28 +148,14 @@ export default function Header() {
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-600 shadow hover:shadow-xl transition-all duration-200"
                                     onClick={closeMobileMenu}
                                 >
-                                    About
+                                    Home
                                 </a>
                                 <a
-                                    href="#skills"
+                                    href="#services"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-600 shadow hover:shadow-xl transition-all duration-200"
                                     onClick={closeMobileMenu}
                                 >
-                                    Skills
-                                </a>
-                                <a
-                                    href="#experience"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-600 shadow hover:shadow-xl transition-all duration-200"
-                                    onClick={closeMobileMenu}
-                                >
-                                    Experience
-                                </a>
-                                <a
-                                    href="#education"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-600 shadow hover:shadow-xl transition-all duration-200"
-                                    onClick={closeMobileMenu}
-                                >
-                                    Education
+                                    Services
                                 </a>
                                 <a
                                     href="#projects"
@@ -202,6 +164,14 @@ export default function Header() {
                                 >
                                     Projects
                                 </a>
+                                <a
+                                    href="#why-choose-me"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-600 shadow hover:shadow-xl transition-all duration-200"
+                                    onClick={closeMobileMenu}
+                                >
+                                    Why Me
+                                </a>
+                                <a href="#process" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-600 shadow hover:shadow-xl transition-all duration-200" onClick={closeMobileMenu}>Process</a>
                                 <a
                                     href="#contact"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-600 shadow hover:shadow-xl transition-all duration-200"

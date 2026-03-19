@@ -1,144 +1,121 @@
-import { Linkedin } from "react-feather";
-import florida from './assets/projects/florida.png';
 import Select from './assets/projects/select-tech.png';
 import Talon from './assets/projects/talon-lodge.png';
 import Driving from './assets/projects/driving-school.png';
 import Simon from './assets/projects/simon.png';
-import DC from './assets/projects/dc.png';
-import Smart from './assets/projects/smart.png';
 import BorrowedLuxeHire from './assets/projects/borrowed_luxe_hire.png';
 import Mandaean from './assets/projects/mandean.png';
 
 export const projects = [
     {
-        title: 'Cyber Security (LMS)',
-        description: 'LMS for cyber security training.',
+        title: 'Cyber Security LMS Platform',
+        description: 'Built a reliable LMS backend and admin workflows to remove manual learner operations and make course delivery faster for a training business.',
         technologies: ['React', 'Laravel', 'MySQL'],
         link: 'https://portal.selecttechinc.com/',
         imageUrl: Select,
     },
     {
-        title: 'Talon Lodge Online Booking System',
-        description: 'Online booking system for a lodge and spa.',
+        title: 'Talon Lodge Booking System',
+        description: 'Replaced manual reservation bottlenecks with a stable booking flow so guests could book rooms and spa services quickly, even during busy periods.',
         technologies: ['PHP', 'Smarty'],
         link: 'http://www.talonlodge.com/',
         imageUrl: Talon,
     },
     {
-        title: '1 STOP Driver Improvement Clinic',
-        description: 'Online learning platform for driver improvement.',
+        title: 'Driver Improvement Learning Platform',
+        description: 'Delivered backend logic for enrollment and course progress tracking to help the business run online classes at scale with fewer support issues.',
         technologies: ['Laravel', 'MySQL', 'JavaScript'],
         link: 'https://1stopdrivingschools.com/',
         imageUrl: Driving,
     },
     {
-        title: 'Comprehensive Family Case Management System',
-        description: 'Case management system for family services.',
+        title: 'Family Services Case Management Dashboard',
+        description: 'Centralized case workflows and backend APIs so distributed teams could track updates in one place and reduce delays in follow-ups.',
         technologies: ['React', 'Node.js', 'MySQL', 'Azure'],
         link: 'https://simone3.cfs-nyc.com/',
         imageUrl: Simon,
     },
     {
-        title: 'Florida Real Estate School LMS',
-        description: 'Learning management system and online bookstore for a real estate school.',
-        technologies: ['Opencart'],
-        link: 'https://floridarealestateschool.com/',
-        imageUrl: florida,
-    },
-    {
-        title: 'Designer Club',
-        description: 'Website for rent and buy designer dresses bags and accessories for australia',
-        technologies: ['Shopify', 'Liquid', 'JavaScript', 'Laravel'],
-        link: 'https://thedesignerclub.com.au/',
-        imageUrl: DC,
-    },
-    {
         title: 'Borrowed Luxe Hire',
-        description: 'Luxury fashion rental platform for curated designer looks and occasion wear.',
+        description: 'Improved rental platform backend reliability with cleaner integrations and business rules, helping the team handle orders and inventory with less friction.',
         technologies: ['Shopify', 'Laravel', 'PHP', 'Liquid'],
         link: 'https://www.borrowedluxehire.com.au/',
         imageUrl: BorrowedLuxeHire,
     },
     {
-        title: 'Mandaean App',
-        description: 'Developed the API and admin panel for a platform focused on preserving and sharing Mandaean faith, culture, and heritage.',
+        title: 'Mandaean App API + Admin',
+        description: 'Designed production-ready APIs and admin tools that powered app content management, making launch and ongoing updates smoother and faster.',
         technologies: ['Laravel', 'PHP', 'REST API', 'OpenAPI'],
         link: 'https://admin.mandaeanapp.com.au/',
         imageUrl: Mandaean,
-    },
-    {
-        title: 'Smart Help Store',
-        description: 'Online store for devices complete solutions apple products and traning',
-        technologies: ['PHP', 'JavaScript', 'FileMaker'],
-        link: 'https://smarthelp.store/',
-        imageUrl: Smart,
     }
 ];
 
-export const skills = [
-    { skill: 'PHP', level: 90 },
-    { skill: 'Laravel', level: 90 },
-    { skill: 'JavaScript', level: 85 },
-    { skill: 'Node.js', level: 80 },
-    { skill: 'React', level: 80 },
-    { skill: 'MySQL', level: 80 },
-    { skill: 'AWS', level: 55 },
-    { skill: 'Git', level: 80 },
-];
-
-export const experience = [
+export const services = [
     {
-        title: 'Senior PHP Developer',
-        company: 'Coding Brains Pvt. Ltd.',
-        dates: 'July 2023 - Present',
-        description: [
-            'Proficient in cloud services including AWS (EC2, SES, CloudWatch, IAM), Azure, GitHub Actions (CI/CD), Network Solutions, and Digital Ocean, etc.',
-            'Manage and collaborate with the PHP development team.',
-            'Conduct client meetings, prepare project timelines, and ensure client expectations are met for successful delivery.',
-            'Manage both client and internal servers.',
-        ],
+        title: 'API Development (Node.js / Laravel)',
+        problem: 'Your app, website, and third-party tools are disconnected, causing slow operations and data errors.',
+        solution: 'I build secure, well-structured APIs in Node.js or Laravel with clear contracts, validation, and logging.',
+        result: 'Fast delivery and dependable integrations you can run in production with confidence.',
     },
     {
-        title: 'PHP Developer',
-        company: 'Coding Brains Pvt. Ltd.',
-        dates: 'May 2022 - June 2023',
-        description: [
-            'Solely responsible for PHP & Laravel projects, ensuring their successful completion within deadlines.',
-            'Handle project & bug fixes, maintaining high-quality standards.',
-            'Successfully deliver projects for clients, meeting their specific requirements.',
-        ],
+        title: 'Payment Gateway Integration (Stripe / Razorpay)',
+        problem: 'Checkout failures, missed webhooks, or unreliable payment flows create lost revenue and support overhead.',
+        solution: 'I implement Stripe and Razorpay with robust webhook handling, retry-safe logic, and clean status tracking.',
+        result: 'Reliable transactions, fewer failed payments, and quicker go-live for your product.',
     },
     {
-        title: 'Software Developer',
-        company: 'Edoro Technologies LLP',
-        dates: 'January 2022 - April 2022',
-        description: [
-            'Developed and maintained software applications using PHP, jQuery, JavaScript, Ajax, and MySQL.',
-            'Collaborated with the team to handle project-related challenges and met timelines.',
-        ],
+        title: 'Bug Fixing & Performance Optimization',
+        problem: 'Slow APIs, recurring backend bugs, and unstable releases hurt customer experience and team speed.',
+        solution: 'I isolate root causes, optimize queries and endpoints, and tighten backend reliability with practical fixes.',
+        result: 'Faster response times, stable deployments, and fewer production incidents.',
+    },
+    {
+        title: 'Backend System Development',
+        problem: 'Manual workflows and disconnected tools make growth hard and operations expensive.',
+        solution: 'I build custom backend systems for LMS, booking workflows, dashboards, and internal operations.',
+        result: 'Scalable systems delivered quickly with code that is easy to maintain.',
     },
 ];
 
-export const education = [
+export const whyChooseMe = [
     {
-        degree: 'Bachelor of Computer Application',
-        institution: 'Amity University Online',
-        dates: 'Pursuing',
+        title: 'Fast Delivery Without Chaos',
+        description: 'You get clear milestones and focused execution so features ship quickly without breaking core flows.',
     },
     {
-        degree: 'Diploma in Mechanical Automobile',
-        institution: 'Pt. Ramadhar J Tiwari College of Polytechnic',
-        dates: '2013 - 2016',
+        title: 'Clean, Scalable Backend Code',
+        description: 'I write maintainable backend architecture so your product can scale without expensive rewrites.',
     },
     {
-        degree: 'Higher Secondary Education (12th)',
-        institution: 'Nagar Palika Inter College Mugalsarai',
-        dates: '2011 - 2013',
+        title: 'Clear Communication',
+        description: 'You always know what is done, what is next, and where blockers are. No confusion, no silence.',
     },
     {
-        degree: 'Secondary Education (10th)',
-        institution: 'Nagar Palika Inter College Mugalsarai',
-        dates: '2009 - 2011',
+        title: 'Production Experience',
+        description: 'Hands-on experience with LMS, booking systems, APIs, dashboards, and real client environments.',
+    },
+    {
+        title: 'Business-First Problem Solving',
+        description: 'I focus on outcomes that improve speed, reliability, and revenue instead of shipping random features.',
+    },
+];
+
+export const processSteps = [
+    {
+        title: 'Understand The Problem',
+        description: 'I start by understanding your business goals, current blockers, and technical constraints.',
+    },
+    {
+        title: 'Plan The Right Solution',
+        description: 'You get a practical execution plan with scope, timeline, and clear backend architecture decisions.',
+    },
+    {
+        title: 'Build And Test',
+        description: 'I implement the solution with clean code, testing, and production-ready reliability checks.',
+    },
+    {
+        title: 'Deliver Fast',
+        description: 'I ship stable backend work quickly and support smooth handover or further iterations.',
     },
 ];
 
@@ -146,8 +123,9 @@ export const metaData = {
     title: 'Akhand Pratap Singh',
     email: 'contact@apsinghdev.in',
     phone: '+91 9453915397',
+    whatsapp: '+919453915397',
     location: 'Lucknow, India',
-    description: 'Full Stack Developer',
+    description: 'Backend Developer',
     github: 'https://github.com/Akhand2021',
     linkedin: 'https://www.linkedin.com/in/akhand-pratap-singh-b64812120/'
 }

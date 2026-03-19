@@ -13,8 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Akhand Pratap Singh",
-  description: "FullStack developer",
+  title: "Backend Developer for APIs, Payments & Scalable Systems | Akhand Pratap Singh",
+  description: "Freelance backend developer helping startups and small businesses build reliable APIs, Stripe/Razorpay payment integrations, and scalable backend systems using Laravel, Node.js, React, and AWS.",
+  keywords: [
+    "backend developer",
+    "api developer",
+    "laravel developer",
+    "node.js developer",
+    "payment gateway integration",
+    "stripe integration",
+    "razorpay integration",
+    "freelance backend developer",
+    "backend dashboard development",
+    "aws backend developer"
+  ],
 };
 
 export default function RootLayout({ children }) {
