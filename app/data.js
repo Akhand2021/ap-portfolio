@@ -127,5 +127,5 @@ export const metaData = {
     location: 'Lucknow, India',
     description: 'Backend Developer',
     github: 'https://github.com/Akhand2021',
-    linkedin: 'https://www.linkedin.com/in/akhand-pratap-singh-b64812120/'
+    linkedin: 'https://www.linkedin.com/in/apsinghdev/'
 }
